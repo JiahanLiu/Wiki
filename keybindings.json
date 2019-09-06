@@ -60,7 +60,7 @@
         "when": "editorFocus"
     },
     {
-        "key": "shift+cmd+l",
+        "key": "ctrl+cmd+l",
         "command": "cursorRightSelect",
         "when": "textInputFocus"
     },
@@ -70,7 +70,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "shift+cmd+j",
+        "key": "ctrl+cmd+j",
         "command": "cursorLeftSelect",
         "when": "textInputFocus"
     },
@@ -85,7 +85,7 @@
         "when": "searchViewletVisible"
     },
     {
-        "key": "shift+cmd+k",
+        "key": "ctrl+cmd+k",
         "command": "cursorDownSelect",
         "when": "textInputFocus"
     },
@@ -100,13 +100,63 @@
         "when": "textInputFocus && !editorReadonly"
     },
     {
-        "key": "shift+cmd+i",
+        "key": "ctrl+cmd+i",
         "command": "cursorUpSelect",
         "when": "textInputFocus"
     },
     {
         "key": "shift+up",
         "command": "-cursorUpSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+l",
+        "command": "cursorWordEndRight",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+right",
+        "command": "-cursorWordEndRight",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+j",
+        "command": "cursorWordStartLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+left",
+        "command": "-cursorWordStartLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "-editor.action.joinLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+cmd+j",
+        "command": "cursorWordStartLeftSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+alt+left",
+        "command": "-cursorWordStartLeftSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+cmd+l",
+        "command": "-toggleFindInSelection",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+cmd+l",
+        "command": "cursorWordEndRightSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+alt+right",
+        "command": "-cursorWordEndRightSelect",
         "when": "textInputFocus"
     }
 ]
