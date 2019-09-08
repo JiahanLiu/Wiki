@@ -60,7 +60,7 @@
         "when": "editorFocus"
     },
     {
-        "key": "ctrl+cmd+l",
+        "key": "shift+cmd+l",
         "command": "cursorRightSelect",
         "when": "textInputFocus"
     },
@@ -70,7 +70,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "ctrl+cmd+j",
+        "key": "shift+cmd+j",
         "command": "cursorLeftSelect",
         "when": "textInputFocus"
     },
@@ -85,7 +85,7 @@
         "when": "searchViewletVisible"
     },
     {
-        "key": "ctrl+cmd+k",
+        "key": "shift+cmd+k",
         "command": "cursorDownSelect",
         "when": "textInputFocus"
     },
@@ -100,7 +100,7 @@
         "when": "textInputFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+cmd+i",
+        "key": "shift+cmd+i",
         "command": "cursorUpSelect",
         "when": "textInputFocus"
     },
