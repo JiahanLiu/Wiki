@@ -158,5 +158,9 @@
         "key": "shift+alt+right",
         "command": "-cursorWordEndRightSelect",
         "when": "textInputFocus"
+    },
+    {
+        "key": "shift+cmd+backspace",
+        "command": "editor.action.deleteLines"
     }
 ]
