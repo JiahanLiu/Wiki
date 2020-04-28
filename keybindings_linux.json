@@ -6,7 +6,7 @@
         "when": "inKeybindings && inKeybindingsSearch"
     },
     {
-        "key": "alt+k",
+        "key": "ctrl+j",
         "command": "cursorDown",
         "when": "textInputFocus"
     },
@@ -16,7 +16,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "alt+j",
+        "key": "ctrl+h",
         "command": "cursorLeft",
         "when": "textInputFocus"
     },
@@ -31,7 +31,7 @@
         "when": "editorFocus"
     },
     {
-        "key": "alt+l",
+        "key": "ctrl+l",
         "command": "cursorRight",
         "when": "textInputFocus"
     },
@@ -41,7 +41,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "alt+i",
+        "key": "ctrl+k",
         "command": "cursorUp",
         "when": "textInputFocus"
     },
@@ -56,7 +56,7 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "shift+alt+i",
+        "key": "ctrl+shift+k",
         "command": "cursorUpSelect",
         "when": "textInputFocus"
     },
@@ -66,7 +66,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "shift+alt+k",
+        "key": "ctrl+shift+j",
         "command": "cursorDownSelect",
         "when": "textInputFocus"
     },
@@ -76,7 +76,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "shift+alt+j",
+        "key": "ctrl+shift+h",
         "command": "cursorLeftSelect",
         "when": "textInputFocus"
     },
@@ -86,7 +86,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "shift+alt+l",
+        "key": "ctrl+shift+l",
         "command": "cursorRightSelect",
         "when": "textInputFocus"
     },
@@ -96,7 +96,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "alt+backspace",
+        "key": "ctrl+backspace",
         "command": "editor.action.deleteLines",
         "when": "textInputFocus && !editorReadonly"
     },
@@ -111,7 +111,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "ctrl+shift+l",
+        "key": "ctrl+shift+alt+l",
         "command": "cursorWordEndRightSelect",
         "when": "textInputFocus"
     },
@@ -125,7 +125,7 @@
         "command": "-workbench.action.togglePanel"
     },
     {
-        "key": "ctrl+shift+j",
+        "key": "ctrl+shift+alt+h",
         "command": "cursorWordStartLeftSelect",
         "when": "textInputFocus"
     },
@@ -135,11 +135,186 @@
         "when": "textInputFocus"
     },
     {
-        "key": "ctrl+j",
-        "command": "cursorWordLeft"
+        "key": "alt+meta+l",
+        "command": "cursorWordRight"
     },
     {
-        "key": "ctrl+l",
-        "command": "cursorWordRight"
+        "key": "ctrl+t",
+        "command": "-workbench.action.showAllSymbols"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "workbench.panel.terminal.focus"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "-workbench.action.quickOpenNavigateNextInFilePicker",
+        "when": "inFilesPicker && inQuickOpen"
+    },
+    {
+        "key": "ctrl+shift+p",
+        "command": "-workbench.action.quickOpenNavigatePreviousInFilePicker",
+        "when": "inFilesPicker && inQuickOpen"
+    },
+    {
+        "key": "alt+w",
+        "command": "-toggleSearchWholeWord",
+        "when": "searchViewletFocus"
+    },
+    {
+        "key": "alt+w",
+        "command": "-toggleFindWholeWord",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+w",
+        "command": "-gitlens.diffLineWithWorking",
+        "when": "editorTextFocus && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /tracked/"
+    },
+    {
+        "key": "alt+w",
+        "command": "-toggleSearchEditorWholeWord",
+        "when": "inSearchEditor && searchInputBoxFocus"
+    },
+    {
+        "key": "alt+w",
+        "command": "-workbench.action.terminal.toggleFindWholeWord",
+        "when": "terminalFindWidgetFocused || terminalFocus"
+    },
+    {
+        "key": "alt+j",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "alt+k",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "meta+i",
+        "command": "workbench.action.navigateUp"
+    },
+    {
+        "key": "shift+,",
+        "command": "workbench.action.navigateDown"
+    },
+    {
+        "key": "shift+end",
+        "command": "-cursorEndSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "cursorPageDown",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "pagedown",
+        "command": "-cursorPageDown",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "cursorPageUp",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "pageup",
+        "command": "-cursorPageUp",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+alt+l",
+        "command": "cursorWordEndRight",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+right",
+        "command": "-cursorWordEndRight",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+alt+h",
+        "command": "cursorWordStartLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+left",
+        "command": "-cursorWordStartLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+k e",
+        "command": "-workbench.files.action.focusOpenEditorsView",
+        "when": "workbench.explorer.openEditorsView.active"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "ctrl+1",
+        "command": "-workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "-workbench.view.debug"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "f12",
+        "command": "-editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "-workbench.action.search.toggleQueryDetails",
+        "when": "inSearchEditor || searchViewletFocus"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "cursorLineStart"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+shift+h",
+        "command": "-workbench.action.replaceInFiles"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "-workbench.action.tasks.build"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "cursorLineEnd"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "-workbench.view.explorer"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "-workbench.action.quickOpenNavigatePreviousInFilePicker",
+        "when": "inFilesPicker && inQuickOpen"
+    },
+    {
+        "key": "ctrl+backspace",
+        "command": "-workbench.action.terminal.deleteWordLeft",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+backspace",
+        "command": "-deleteWordLeft",
+        "when": "textInputFocus && !editorReadonly"
     }
 ]
