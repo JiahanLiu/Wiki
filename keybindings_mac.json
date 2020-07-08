@@ -16,7 +16,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "shift+h",
+        "key": "cmd+h",
         "command": "cursorLeft",
         "when": "textInputFocus"
     },
