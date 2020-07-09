@@ -153,7 +153,7 @@
         "command": "-workbench.action.reopenClosedEditor"
     },
     {
-        "key": "cmd+t",
+        "key": "shift+cmd+t",
         "command": "workbench.panel.terminal.focus"
     },
     {
