@@ -153,7 +153,7 @@
         "command": "-workbench.action.reopenClosedEditor"
     },
     {
-        "key": "shift+cmd+t",
+        "key": "cmd+t",
         "command": "workbench.panel.terminal.focus"
     },
     {
@@ -358,6 +358,30 @@
     {
         "key": "pagedown",
         "command": "-workbench.action.terminal.scrollDownPage",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+t",
+        "command": "-workbench.action.showAllSymbols"
+    },
+    {
+        "key": "cmd+j",
+        "command": "workbench.action.terminal.scrollDown",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+cmd+pagedown",
+        "command": "-workbench.action.terminal.scrollDown",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+k",
+        "command": "workbench.action.terminal.scrollUp",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+cmd+pageup",
+        "command": "-workbench.action.terminal.scrollUp",
         "when": "terminalFocus"
     }
 ]
