@@ -100,7 +100,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "alt+l",
+        "key": "alt+cmd+l",
         "command": "cursorWordEndRight",
         "when": "textInputFocus"
     },
@@ -159,11 +159,6 @@
     {
         "key": "shift+cmd+e",
         "command": "-workbench.view.explorer"
-    },
-    {
-        "key": "shift+cmd+e",
-        "command": "workbench.files.action.focusOpenEditorsView",
-        "when": "workbench.explorer.openEditorsView.active"
     },
     {
         "key": "cmd+k e",
@@ -247,10 +242,6 @@
         "key": "shift+cmd+l",
         "command": "-selectAllSearchEditorMatches",
         "when": "inSearchEditor"
-    },
-    {
-        "key": "alt+cmd+l",
-        "command": "cursorWordRight"
     },
     {
         "key": "alt+cmd+l",
@@ -383,5 +374,42 @@
         "key": "alt+cmd+pageup",
         "command": "-workbench.action.terminal.scrollUp",
         "when": "terminalFocus"
+    },
+    {
+        "key": "shift+cmd+e",
+        "command": "workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "cmd+1",
+        "command": "-workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "alt+h",
+        "command": "-gitlens.showQuickFileHistory",
+        "when": "gitlens:enabled && config.gitlens.keymap == 'alternate'"
+    },
+    {
+        "key": "shift+alt+h",
+        "command": "-references-view.showCallHierarchy",
+        "when": "editorHasCallHierarchyProvider"
+    },
+    {
+        "key": "shift+alt+h",
+        "command": "-gitlens.showQuickRepoHistory",
+        "when": "gitlens:enabled && config.gitlens.keymap == 'alternate'"
+    },
+    {
+        "key": "shift+alt+h",
+        "command": "-editor.showCallHierarchy",
+        "when": "editorHasCallHierarchyProvider && editorTextFocus && !inReferenceSearchEditor"
+    },
+    {
+        "key": "shift+alt+h",
+        "command": "-editor.toggleCallHierarchy",
+        "when": "callHierarchyVisible"
+    },
+    {
+        "key": "shift+alt+cmd+l",
+        "command": "cursorWordEndRightSelect"
     }
 ]
