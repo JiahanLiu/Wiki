@@ -280,10 +280,6 @@
         "when": "textInputFocus"
     },
     {
-        "key": "cmd+e",
-        "command": "-actions.findWithSelection"
-    },
-    {
         "key": "alt+cmd+f",
         "command": "-editor.action.startFindReplaceAction"
     },
@@ -411,5 +407,14 @@
     {
         "key": "shift+alt+cmd+l",
         "command": "cursorWordEndRightSelect"
+    },
+    {
+        "key": "alt+s",
+        "command": "-gitlens.showQuickRepoStatus",
+        "when": "gitlens:enabled && config.gitlens.keymap == 'alternate'"
+    },
+    {
+        "key": "alt+s",
+        "command": "toggleFindInSelection"
     }
 ]
