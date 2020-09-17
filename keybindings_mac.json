@@ -153,10 +153,6 @@
         "command": "-workbench.action.reopenClosedEditor"
     },
     {
-        "key": "shift+cmd+t",
-        "command": "workbench.panel.terminal.focus"
-    },
-    {
         "key": "shift+cmd+e",
         "command": "-workbench.view.explorer"
     },
@@ -416,5 +412,9 @@
     {
         "key": "alt+s",
         "command": "toggleFindInSelection"
+    },
+    {
+        "key": "shift+cmd+t",
+        "command": "terminal.focus"
     }
 ]
