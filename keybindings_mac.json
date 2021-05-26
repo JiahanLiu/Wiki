@@ -476,19 +476,19 @@
         "command": "-workbench.action.nextEditor"
     },
     {
-        "key": "alt+cmd+left",
-        "command": "workbench.action.moveActiveEditorGroupLeft"
-    },
-    {
-        "key": "cmd+k left",
-        "command": "-workbench.action.moveActiveEditorGroupLeft"
-    },
-    {
         "key": "alt+cmd+right",
-        "command": "workbench.action.moveActiveEditorGroupRight"
+        "command": "workbench.action.moveEditorToNextGroup"
     },
     {
-        "key": "cmd+k right",
-        "command": "-workbench.action.moveActiveEditorGroupRight"
+        "key": "ctrl+cmd+right",
+        "command": "-workbench.action.moveEditorToNextGroup"
+    },
+    {
+        "key": "alt+cmd+left",
+        "command": "workbench.action.moveEditorToPreviousGroup"
+    },
+    {
+        "key": "ctrl+cmd+left",
+        "command": "-workbench.action.moveEditorToPreviousGroup"
     }
 ]
