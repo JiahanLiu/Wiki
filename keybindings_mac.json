@@ -442,7 +442,7 @@
         "command": "-workbench.action.focusNextPart"
     },
     {
-        "key": "shift+cmd+right",
+        "key": "cmd+right",
         "command": "workbench.action.nextEditor"
     },
     {
@@ -450,7 +450,7 @@
         "command": "-workbench.action.nextEditor"
     },
     {
-        "key": "shift+cmd+left",
+        "key": "cmd+left",
         "command": "workbench.action.previousEditor"
     },
     {
@@ -500,5 +500,17 @@
         "key": "ctrl+`",
         "command": "-workbench.action.terminal.toggleTerminal",
         "when": "terminal.active"
+    },
+    {
+        "key": "cmd+k alt+cmd+right",
+        "command": "-workbench.action.nextEditorInGroup"
+    },
+    {
+        "key": "shift+cmd+right",
+        "command": "workbench.action.focusNextGroup"
+    },
+    {
+        "key": "shift+cmd+left",
+        "command": "workbench.action.focusPreviousGroup"
     }
 ]
