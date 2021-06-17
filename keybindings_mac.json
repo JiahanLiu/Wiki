@@ -418,16 +418,6 @@
         "command": "terminal.focus"
     },
     {
-        "key": "cmd+n",
-        "command": "search.action.focusNextSearchResult",
-        "when": "hasSearchResult || inSearchEditor"
-    },
-    {
-        "key": "f4",
-        "command": "-search.action.focusNextSearchResult",
-        "when": "hasSearchResult || inSearchEditor"
-    },
-    {
         "key": "shift+cmd+left",
         "command": "-cursorHomeSelect",
         "when": "textInputFocus"
