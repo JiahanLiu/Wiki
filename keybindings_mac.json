@@ -461,22 +461,6 @@
         "command": "-workbench.action.nextEditor"
     },
     {
-        "key": "alt+cmd+right",
-        "command": "workbench.action.moveEditorToNextGroup"
-    },
-    {
-        "key": "ctrl+cmd+right",
-        "command": "-workbench.action.moveEditorToNextGroup"
-    },
-    {
-        "key": "alt+cmd+left",
-        "command": "workbench.action.moveEditorToPreviousGroup"
-    },
-    {
-        "key": "ctrl+cmd+left",
-        "command": "-workbench.action.moveEditorToPreviousGroup"
-    },
-    {
         "key": "shift+cmd+t",
         "command": "workbench.action.terminal.toggleTerminal",
         "when": "terminal.active"
