@@ -368,7 +368,7 @@
         "when": "terminalFocus"
     },
     {
-        "key": "cmd+r",
+        "key": "shift+cmd+e",
         "command": "workbench.action.focusFirstEditorGroup"
     },
     {
@@ -414,7 +414,7 @@
         "command": "toggleFindInSelection"
     },
     {
-        "key": "cmd+t",
+        "key": "shift+cmd+t",
         "command": "terminal.focus"
     },
     {
@@ -458,7 +458,28 @@
     },
     {
         "key": "alt+cmd+right",
+        "command": "-workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "alt+cmd+right",
         "command": "-workbench.action.nextEditor"
+    },
+    {
+        "key": "alt+cmd+right",
+        "command": "workbench.action.moveEditorToNextGroup"
+    },
+    {
+        "key": "ctrl+cmd+right",
+        "command": "-workbench.action.moveEditorToNextGroup"
+    },
+    {
+        "key": "alt+cmd+left",
+        "command": "workbench.action.moveEditorToPreviousGroup"
+    },
+    {
+        "key": "ctrl+cmd+left",
+        "command": "-workbench.action.moveEditorToPreviousGroup"
     },
     {
         "key": "shift+cmd+t",
@@ -483,7 +504,7 @@
         "command": "workbench.action.focusPreviousGroup"
     },
     {
-        "key": "ctrl+e",
-        "command": "workbench.action.closeSidebar"
+        "key": "cmd+;",
+        "command": "workbench.action.toggleSidebarVisibility"
     }
 ]
