@@ -506,5 +506,23 @@
     {
         "key": "cmd+;",
         "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "cmd+r",
+        "command": "workbench.action.quickSwitchWindow"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.switchWindow"
+    },
+    {
+        "key": "cmd+r",
+        "command": "-workbench.action.reloadWindow",
+        "when": "isDevelopment"
+    },
+    {
+        "key": "cmd+r",
+        "command": "-python.refreshTensorBoard",
+        "when": "python.hasActiveTensorBoardSession"
     }
 ]
