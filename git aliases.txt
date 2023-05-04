@@ -1,4 +1,4 @@
-alias s='ssh'
+alias s='ssh -A'
 alias ga='git add'
 alias gau='git add -u'
 alias gb='git branch'
