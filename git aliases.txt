@@ -1,7 +1,6 @@
 alias s='ssh -A'
 alias ga='git add'
 alias gau='git add -u'
-alias gb='git branch'
 alias gbd='git branch -D'
 alias gc='git commit'
 alias gca='git commit --amend'
