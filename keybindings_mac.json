@@ -6,7 +6,7 @@
         "when": "terminalFocus"
     },
     {
-        "key": "cmd+j",
+        "key": "cmd+k",
         "command": "cursorDown",
         "when": "textInputFocus"
     },
@@ -16,7 +16,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "cmd+h",
+        "key": "cmd+j",
         "command": "cursorLeft",
         "when": "textInputFocus"
     },
@@ -45,7 +45,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "cmd+k",
+        "key": "cmd+i",
         "command": "cursorUp",
         "when": "textInputFocus"
     },
@@ -90,7 +90,7 @@
         "when": "textInputFocus && !editorReadonly"
     },
     {
-        "key": "shift+cmd+k",
+        "key": "shift+cmd+i",
         "command": "cursorUpSelect",
         "when": "textInputFocus"
     },
@@ -110,7 +110,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "alt+j",
+        "key": "alt+cmd+j",
         "command": "cursorWordStartLeft",
         "when": "textInputFocus"
     },
@@ -125,7 +125,7 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "alt+cmd+j",
+        "key": "shift+alt+cmd+j",
         "command": "cursorWordStartLeftSelect",
         "when": "textInputFocus"
     },
@@ -155,11 +155,6 @@
     {
         "key": "shift+cmd+e",
         "command": "-workbench.view.explorer"
-    },
-    {
-        "key": "cmd+k e",
-        "command": "-workbench.files.action.focusOpenEditorsView",
-        "when": "workbench.explorer.openEditorsView.active"
     },
     {
         "key": "cmd+right",
@@ -213,7 +208,7 @@
         "when": "terminalFocus"
     },
     {
-        "key": "shift+cmd+j",
+        "key": "shift+cmd+k",
         "command": "cursorDownSelect"
     },
     {
@@ -222,7 +217,7 @@
         "when": "inSearchEditor || searchViewletFocus"
     },
     {
-        "key": "shift+cmd+h",
+        "key": "shift+cmd+j",
         "command": "cursorLeftSelect"
     },
     {
@@ -245,12 +240,8 @@
         "when": "inSearchEditor"
     },
     {
-        "key": "alt+cmd+h",
+        "key": "alt+cmd+j",
         "command": "cursorWordLeft"
-    },
-    {
-        "key": "shift+alt+cmd+h",
-        "command": "cursorWordLeftSelect"
     },
     {
         "key": "shift+alt+cmd+l",
@@ -414,7 +405,7 @@
         "command": "toggleFindInSelection"
     },
     {
-        "key": "shift+cmd+t",
+        "key": "cmd+t",
         "command": "terminal.focus"
     },
     {
@@ -482,7 +473,7 @@
         "command": "-workbench.action.moveEditorToPreviousGroup"
     },
     {
-        "key": "shift+cmd+t",
+        "key": "cmd+t",
         "command": "workbench.action.terminal.toggleTerminal",
         "when": "terminal.active"
     },
@@ -524,5 +515,51 @@
         "key": "cmd+r",
         "command": "-python.refreshTensorBoard",
         "when": "python.hasActiveTensorBoardSession"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "-editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "-editor.action.formatDocument.none",
+        "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "editor.action.formatSelection",
+        "when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+k cmd+f",
+        "command": "-editor.action.formatSelection",
+        "when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+cmd+f",
+        "command": "editor.action.formatChanges"
+    },
+    {
+        "key": "ctrl+;",
+        "command": "trailing-spaces.highlightTrailingSpaces"
+    },
+    {
+        "key": "alt+cmd+t",
+        "command": "-workbench.action.closeOtherEditors"
+    },
+    {
+        "key": "cmd+0",
+        "command": "-workbench.action.focusSideBar"
+    },
+    {
+        "key": "cmd+0",
+        "command": "workbench.files.action.focusOpenEditorsView",
+        "when": "workbench.explorer.openEditorsView.active"
+    },
+    {
+        "key": "cmd+k e",
+        "command": "-workbench.files.action.focusOpenEditorsView",
+        "when": "workbench.explorer.openEditorsView.active"
     }
 ]
